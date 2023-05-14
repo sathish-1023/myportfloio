@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio Website-Brad</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+   
+  
+  
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="text/javascript">
+	function sendEmail() {
+        var email=document.getElementById("email").value;
+        var subject=document.getElementById("subject").value;
+        var body =document.getElementById("comment").value;
+        var name=document.getElementById("name").value;
+
+        if(email=="" || subject=="" || body=="" || name==""){
+            alert("please fill all details ");
+            return;
+        }
+	Email.send({
+
+        SecureToken : "ec26a6ae-30ab-4c92-8eb4-d2dda1d2f7c6",
+		Host: "smtp.elasticemail.com",
+        port:2525,
+		Username: "208r1a05d1@cmrec.ac.in",
+		Password: "2FE124C9794F06378A80396F52580A0AF3E9",
+		To: email,
+		From: "208r1a05d1@cmrec.ac.in",
+		Subject: name+"   "+subject,
+		Body: body,
+		//Attachments: [
+		//{
+			//name: "File_Name_with_Extension",
+			//path: "Full Path of the file"
+		//}]
+	})
+		.then(function (message) {
+		alert("Mail has been sent successfully" +message);
+		})
+	    .catch(e =>{
+            alert("mail is not sent "+e);
+        })
+
+        
+	
+	
+}
+</script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+            
+
+
+
+    <!-- navbar -->
+    <div id="#nav">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll" style="color: black;">
+        <div class="container">
+              <a href="index.php" class="navbar-brand ml-lg-3">
+        <h1 class="m-0 display-5"><span class="text-success">Sathish
+            <span id="line1" class="line"></span>
+            <span id="line2" class="line"></span>
+        </span></h1>
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+        <div class="navbar-nav m-auto py-0 text-primary">
+            <a href="#home" class="nav-item nav-link active"><span class="text-success">Home
+              
+            </a>
+            <a href="#about" class="nav-item nav-link"><span class="text-success">About
+                
+            </a>
+            <a href="#qualification" class="nav-item nav-link"><span class="text-success">Quality
+                
+            </a>
+            <a href="#skill" class="nav-item nav-link"><span class="text-success">Skills
+                
+            </a>
+         <!--  <a href="#services" class="nav-item nav-link"><span class="text-success">Services
+                
+            </a>--> 
+            <a href="#portfolio" class="nav-item nav-link"><span class="text-success">Portfolio
+                
+            </a>
+            <!--<a href="#testimonial" class="nav-item nav-link">Review</a>-->
+            <a href="#contact" class="nav-item nav-link"><span class="text-success">Contact
+            
+            </a>
+        </div>
+        <a href="" class="btn btn-menu d-none d-lg-block" style="background-color:#457efa; color: #ffffff;">Hire Me
+            
+        </a>
+    </div>
+        </div>
+    </nav>
+    </div>
+    
+    
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="assets/images/hero.png" class= "imageAboutPage" alt="">
+                </div>
+                
+            <div class="col-lg-12 hero-text">
+              
+                <h2 class="hero_title">SOFTWARE DEVELOPER</h2>
+                <p class="hero_desc">I am a Student in CMR ENGINERRING COLLEGE</p>
+            
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section-->
+    
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class=" reveal text-center text-primary">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="assets/images/about.png" class= "imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <p> 
+                        I'm Enthuastic learner in New Technologies.
+                        My Aim to Create Software products which will fulfill our Customer Requriments.
+
+                    </p>
+                    <div class="row mt-3 text-info">
+
+                         <div class="col-md-6">
+                            
+                                 <div class="col-sm-6 py-2 "><h6>Name: <span class="text-secondary">CHAKALI SATHISH</span></h6></div>
+                                 <div class="col-sm-4 py-2"><h6>Birthday: <span class="text-secondary">6 JUNE 2001</span></h6></div>
+                                    <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">B.TECH</span></h6></div>
+                                <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">Pursing 4th Year</span></h6></div>
+                            
+                        </div>
+                    <div class="col-md-6">
+                  <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">+91 6301343762</span></h6></div>
+                  <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">alichalasathish50@gmail.com</span></h6></div>
+                  <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">3-65,Gundaram,Kamareddy,Telangana, India</span></h6></div>
+                  <div class="col-sm-6 py-2"><h6>Freelance: <span class="text-secondary">Available</span></h6></div>
+              
+
+                        
+                        </div>
+                       
+                    </div>
+                    <div class="row mt-3">
+                            
+                       
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    
+   <!-- Skill Start -->
+   <div class="container-fluid py-5" id="skill">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+            <h1 class="position-absolute text-uppercase text-secondary">My Skills</h1>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-9">
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">HTML</h6>
+                        <h6 class="font-weight-bold">80%</h6>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Info example" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                      </div>
+                </div>
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">CSS</h6>
+                        <h6 class="font-weight-bold">85%</h6>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Info example" style="width: 85%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">85%</div>
+                      </div>
+                </div>
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">PHP</h6>
+                        <h6 class="font-weight-bold">85%</h6>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Info example" style="width: 85%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">85%</div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">Javascript</h6>
+                        <h6 class="font-weight-bold">70%</h6>
+                    </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Info example" style="width: 70%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">70%</div>
+                          </div>
+                </div>
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">React JS</h6>
+                        <h6 class="font-weight-bold">70%</h6>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Info example" style="width: 70%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">70%</div>
+                      </div>
+                </div>
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">java</h6>
+                        <h6 class="font-weight-bold">85%</h6>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Info example" style="width: 85%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">70%</div>
+                      </div>
+                </div>
+
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">python</h6>
+                        <h6 class="font-weight-bold">85%</h6>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Info example" style="width: 85%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">85%</div>
+                      </div>
+                </div>
+
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">django</h6>
+                        <h6 class="font-weight-bold">80%</h6>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Info example" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                      </div>
+                </div>
+
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">opencv,face-recognition</h6>
+                        <h6 class="font-weight-bold">50%</h6>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Info example" style="width: 50%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">50%</div>
+                      </div>
+                </div>
+
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">C</h6>
+                        <h6 class="font-weight-bold">90%</h6>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Info example" style="width: 90%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">90%</div>
+                      </div>
+                </div>
+
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">C++</h6>
+                        <h6 class="font-weight-bold">85%</h6>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Info example" style="width: 85%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">85%</div>
+                      </div>
+                </div>
+
+                <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-weight-bold">MYSQL</h6>
+                        <h6 class="font-weight-bold">80%</h6>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Info example" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                      </div>
+                      
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Skill End -->
+
+
+
+
+
+
+ <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+                <h1 class="position-absolute text-uppercase text-primary text-">Education & Expericence</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px; font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Bachelor of Science</h5>
+                            <p class="mb-2"><strong >CMR ENGINEERING COLLEGE</strong> | <small>2020 - 2024</small></p>
+                            <p> I scored overall 8.6 CGPA upto 3.1 Semester</p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">INTERMEDIATE EDUCATION</h5>
+                            <p class="mb-2"><strong>SANDEEPANI JUNOIR COLLEGE,KAMAREDDY</strong> | <small>2017 - 2019</small></p>
+                            <p> I scored 463 marks out of 470 marks(M.P.C) in Intermediate First Year.At end of Intermidiate ,I scored 955 marks.. </p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">S.S.C(10th)</h5>
+                            <p class="mb-2"><strong>ZILLA PARISHAD HIGH SCHOOL</strong> | <small>2017</small></p>
+                            <p>I scored 9.3 CGPA in 10th Class</p>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Expericence</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Web Designer</h5>
+                            <p class="mb-2"><strong>Soft Company</strong> | <small> Excellent</small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Artificial Intelligence</h5>
+                            <p class="mb-2"><strong>Soft Company</strong> | <small> Good</small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                        </div>
+                        <div class="position-relative ex-me mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px;left: -35px;  font-size: 22px;"></i>
+                            <h5 class="font-weight-bold mb-1">Web Development</h5>
+                            <p class="mb-2"><strong>Soft Company</strong> | <small> Excellent</small></p>
+                            <p>Tempor eos dolore amet tempor dolor tempor. Dolore ea magna sit amet dolor eirmod. Eos ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit ipsum stet lorem diam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  -->
+    <!-- Qualification End -->
+
+    <!-- services section-->
+    <!--
+    <section id="services">
+        <div class="container">
+            <h1 class="text-center text-primary">Services</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class="fas servicesIcon fa-clock"></i>
+                            <h4 class="card-title mt-3 text-info">Website Development</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-layer-group'></i>
+                            <h4 class="card-title mt-3 text-info">Website Design</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='far servicesIcon fa-check-circle'></i>
+                            <h4 class="card-title mt-3 text-info">Website Deployment</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-search'></i>
+                            <h4 class="card-title mt-3 text-info">SEO</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-shield-alt'></i>
+                            <h4 class="card-title mt-3 text-info">DevOps</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-wrench'></i>
+                            <h4 class="card-title mt-3 text-info">QA</h4>
+                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+  -->
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center text-primary">Portfolio</h1>
+            <div class="row text-secondary">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/images/face_recog.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title text-info">Face-recoginition using CCTv</h4>
+                            <p class="card-text">This is python  project using face-recognition package and openCV</p>
+                            <div class="text-center">
+                                <a href="https://github.com/sathish-1023/face-recognition/" class="btn btn-success">LInk </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="./assets/images/social_app.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title text-info">Social App(ChatApp)</h4>
+                            <p class="card-text"> This is a ReactNative App with Google authentication and facebook authentication</p>
+                            <div class="text-center">
+                                <a href="https://github.com/sathish-1023/ChatApp" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top " src="assets/images/paytm_integ.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title text-info">Paytm integration in Django</h4>
+                            <p class="card-text"> I am integrated with Paytm payments</p>
+                            <div class="text-center">
+                                <a href="https://github.com/sathish-1023/paytm_django" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="./assets/images/mail.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title text-info">Mailing  Service</h4>
+                            <p class="card-text">This is PHP Project that generate the otp and verify the otp is correct or not </p>
+                            <div class="text-center">
+                                <a href="https://github.com/sathish-1023/smtp/" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="./assets/images/crud.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title text-info">CRUD operation using Springboot and Mysql and React js</h4>
+                            <p class="card-text">The dynamic application to perform Crud operation on  MYSQL database</p>
+                            <div class="text-center">
+                                <a href="https://github.com/sathish-1023/demofrontend" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="assets/images/network_scann.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title text-info">Network Scanner with Nmap and Tkinter Module</h4>
+                            <p class="card-text">This project is to obtain the Tcp and udp protocal</p>
+                            <div class="text-center">
+                                <a href="https://github.com/sathish-1023/NetworkScanner/" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+
+               <!-- <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=New+York&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                            </iframe>
+                        </div>
+
+                        
+                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                        <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                        </style>
+                    </div>-->
+
+                    <div style="overflow:hidden;max-width:100%;width:500px;height:500px;"><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Hyderabad,+Telangana,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="google-maps-html" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="grab-maps-authorization">premium bootstrap themes</a><style>#google-maps-canvas img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <form>
+                        <input type="text" class="form-control form-control-lg"  id="name" placeholder="Name" required>
+                        <input type="email" class="form-control mt-3" placeholder="Email" id="email" required>
+                        <input type="text" class="form-control mt-3" placeholder="Subject" id="subject" required>
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-success mt-3" onclick="sendEmail()">Contact Me</button>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    
+ 
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>
+
